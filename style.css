@@ -60,14 +60,27 @@ nav a:hover {
 }
 
 #about img {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #projects {
     background: var(--secondary-bg);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 40px;
+}
+
+#projects img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#projects h3 {
+    font-size: 1.8em;
+    color: var(--primary-text);
 }
 
 #contact {
