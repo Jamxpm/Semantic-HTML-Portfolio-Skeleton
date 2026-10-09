@@ -5,3 +5,26 @@
     --secondary: #57886c;
     --highlight: #eef5db;
     --page-margin: 4rem;
+}
+
+body {
+    font-family: Times New Roman, serif;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+main {
+    margin: 0 var(--page-margin);
+}
