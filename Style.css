@@ -16,7 +16,7 @@ body {
 
 h2 {
     font-size: 2em;
-    border-bottom: 2px solid var(--secondary);
+    border-bottom: 1.5px solid var(--secondary);
     padding-bottom: 10px;
 }
 
@@ -27,4 +27,65 @@ p {
 
 main {
     margin: 0 var(--page-margin);
+}
+
+nav {
+    background: var(--secondary);
+    padding: 32px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 3.2em;
+    margin: 25px;
+}
+
+nav a:hover {
+    color: var(--highlight);
+}
+
+#home {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+#about {
+    margin-bottom: 40px;
+}
+
+#about img {
+    border-radius: 5px;
+}
+
+#projects {
+    background: var(--secondary-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+#contact {
+    margin-bottom: 40px;
+}
+
+#contact a {
+    color: var(--secondary);
+    margin-right: 20px;
+}
+
+#contact a:hover {
+    color: var(--primary-text);
+}
+
+footer {
+    background: var(--secondary);
+    color: var(--primary-text);
+    text-align: right;
+    padding: 15px;
 }
