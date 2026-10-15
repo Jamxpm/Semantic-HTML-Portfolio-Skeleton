@@ -114,3 +114,45 @@ footer {
     text-align: right;
     padding: 15px;
 }
+/* AI-assisted fix: Added closing braces and separated the media queries; they were nested unintentionally, leaving the CSS block unclosed. */
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    :root {
+        --page-margin: 2rem;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    nav a {
+        font-size: 1em;
+    }
+}
+
+/* Tablets and laptops */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    :root {
+        --page-margin: 1.5rem;
+    }
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    #home h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Large devices: Desktops */
+@media only screen and (min-width: 1025px) {
+    :root {
+        --page-margin: 4rem;
+    }
+    nav a {
+        font-size: 1.2em;
+    }
+    .project-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
