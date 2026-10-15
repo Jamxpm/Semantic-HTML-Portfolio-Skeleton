@@ -4,7 +4,10 @@
     --primary-text: #402e2a;
     --secondary: #57886c;
     --highlight: #eef5db;
-    --page-margin: 4rem;
+    --page-margin: 1rem;
+    
+}
+*{Box-sizing:border-box;
 }
 
 body {
