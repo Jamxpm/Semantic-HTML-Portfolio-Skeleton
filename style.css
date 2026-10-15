@@ -74,20 +74,20 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 40px;
-    .project-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+}
 
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 #projects img {
-    width: 400px;
+    width: 100%;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0;
 }
 
 #projects h3 {
@@ -114,8 +114,8 @@ footer {
     text-align: right;
     padding: 15px;
 }
-/* AI-assisted fix: Added closing braces and separated the media queries; they were nested unintentionally, leaving the CSS block unclosed. */
 /* Breakpoint 1: Small tablets */
+
 @media (min-width: 600px) {
     :root {
         --page-margin: 2rem;
@@ -158,3 +158,15 @@ footer {
         font-size: 3em;
     }
 }
+
+/*
+AI Use: Copilot was used to review my existing CSS,
+double check my  design, and identify minor
+errors involving Grid selectors and media queries.
+
+Prompt: Review my CSS for errors and check whether it
+meets the assignment requirements without changing my HTML or CSS.
+
+Output: AI identified minor CSS issues and suggested
+corrections to improve responsiveness.
+*/
