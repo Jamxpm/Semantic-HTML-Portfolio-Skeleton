@@ -1,12 +1,26 @@
 :root {
-    --primary-bg: #eef5db;
-    --secondary-bg: #dce8d4;
-    --primary-text: #402e2a;
-    --secondary: #57886c;
-    --highlight: #eef5db;
+    color-scheme: light;
+    --primary-bg: #ffffff;
+    --secondary-bg: #f4efeb;
+    --primary-text: #171311;
+    --secondary: #65402c;
+    --nav-text: #ffffff;
+    --link-color: #65402c;
+    --highlight: #ead6c8;
     --page-margin: 1rem;
-    
 }
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --primary-bg: #111111;
+    --secondary-bg: #211914;
+    --primary-text: #f5f2ef;
+    --secondary: #70452f;
+    --nav-text: #ffffff;
+    --link-color: #d9b69f;
+    --highlight: #f0d9c9;
+}
+
 *{Box-sizing:border-box;
 }
 
@@ -43,13 +57,28 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--nav-text);
     text-decoration: none;
     font-size: 1.2em;
 }
 
+nav button {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid currentColor;
+    border-radius: 0.25rem;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    font: inherit;
+    cursor: pointer;
+}
+
 nav a:hover {
     color: var(--highlight);
+}
+
+nav button:focus-visible {
+    outline: 2px solid var(--highlight);
+    outline-offset: 3px;
 }
 
 #home {
@@ -100,7 +129,7 @@ nav a:hover {
 }
 
 #contact a {
-    color: var(--secondary);
+    color: var(--link-color);
     margin-right: 20px;
 }
 
@@ -110,7 +139,7 @@ nav a:hover {
 
 footer {
     background: var(--secondary);
-    color: var(--primary-text);
+    color: var(--nav-text);
     text-align: right;
     padding: 15px;
 }
