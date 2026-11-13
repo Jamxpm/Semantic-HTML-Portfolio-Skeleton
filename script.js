@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    ScrollReveal().reveal(".reveal", {
+    ScrollReveal().reveal("main > section", {
         distance: "30px",
         duration: 800,
         origin: "bottom",
